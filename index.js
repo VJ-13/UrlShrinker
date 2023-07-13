@@ -11,7 +11,6 @@ const req = require('express/lib/request');
 const app = express();
 
 // Connecting to MongoDB
-// localhost:27017/urlShortener
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true, useUnifiedTopology: true,
 }).then(() => console.log('MongoDB connected...'))
